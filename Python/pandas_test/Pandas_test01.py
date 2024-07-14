@@ -3,7 +3,7 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-path = 'Python\scraping_test\pandas_test'
+path = 'Python\pandas_test'
 
 df = pd.read_csv(f'{path}\_iris.csv', index_col=0)
 print(df.head())
