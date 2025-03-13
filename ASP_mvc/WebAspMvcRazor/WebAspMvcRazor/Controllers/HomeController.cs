@@ -18,9 +18,13 @@ namespace WebAspMvcRazor.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public virtual async Task<IActionResult> Index()
         {
-            return View();
+            HomeForm form = new HomeForm();
+            form.data1 = "aaaa";
+            form.data2 = "bbbb";
+
+            return View(form);
         }
 
         public IActionResult Privacy()
